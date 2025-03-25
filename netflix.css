@@ -1,0 +1,276 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white; /* Light mode background */
+  color: black; /* Light mode text color */
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for theme changes */
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 5%;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.navbar_netflix {
+  height: 100%;
+  width: 148px;
+}
+
+.navbar_nav_items {
+  display: flex;
+  gap: 20px;
+}
+
+.netflix_logo {
+  width: 100%;
+  height: 100%;
+}
+
+.language_drop_down {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.dropdown_container {
+  border: 1px solid #535352;
+  padding: 0.4rem;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.sign_in_button {
+  border: none;
+  background-color: #E50914;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(193, 17, 25);
+}
+
+/* Dark Mode Toggle Button */
+.dark_mode_button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.dark_mode_button:hover {
+  background-color: #555;
+  transform: scale(1.1);
+}
+
+.dark_mode_button i {
+  font-size: 1.5rem;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212; /* Dark mode background */
+  color: #e5e5e5; /* Dark mode text color */
+}
+
+body.dark-mode .footer {
+  background: #000;
+}
+
+body.dark-mode .faq-answer {
+  color: #bbb;
+}
+
+/* Hero Section */
+.hero_bg_img_cont {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.hero_bg_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero_bg_overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero_card {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hero_title {
+  font-weight: 800;
+  font-size: 3.5rem;
+}
+
+.hero_subtitle,
+.hero_desc {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.email {
+  width: 400px;
+  height: 56px;
+  color: black;
+  border-radius: 4px;
+  padding: 0.5rem;
+  border: 1px solid #535352;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.get_started {
+  font-size: 1.2rem;
+  width: 220px;
+  height: 56px;
+  background-color: #E50914;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.get_started:hover {
+  background-color: rgb(193, 17, 25);
+}
+
+/* Cards Section */
+.card-1,
+.card-2,
+.card-3 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  padding: 3rem 5%;
+  gap: 2rem;
+}
+
+.card-1 video,
+.card-3 video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card-1 img,
+.card-3 img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.desc-1,
+.desc-2,
+.desc-3 {
+  padding: 0 2rem;
+}
+
+.style-cards h1 {
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+}
+
+.style-cards h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+/* Footer */
+.footer {
+  background: #141414;
+  padding: 2rem 5%;
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: #999;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer p {
+  margin-bottom: 1.5rem;
+}
+
+.footer .footer-cols {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+}
+
+.footer li {
+  line-height: 1.9;
+}
+
+/* FAQ Section */
+.faq-item {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #333;
+}
+
+.faq-question {
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 1rem 0;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #ccc;
+}
+
+.faq-answer.expanded {
+  max-height: 200px; /* Adjust based on content */
+}

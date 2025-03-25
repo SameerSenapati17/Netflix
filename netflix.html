@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Netflix Clone - Watch popular TV shows and movies online. Join today!">
+  <meta name="keywords" content="Netflix, clone, movies, TV shows, watch online">
+  <meta name="author" content="Empty-Hacker">
+  
+  <title>Netflix - Watch TV Shows Online, Watch Movies Online</title>
+  <link href="netflix.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="navbar_netflix">
+        <img src="images/logo.png" alt="Netflix Logo" class="netflix_logo" />
+      </div>
+      <div class="navbar_nav_items">
+        <div class="nav_item">
+          <div class="dropdown_container">
+            <i class="fa fa-globe"></i>
+            <!-- Updated ID for language selection -->
+            <select name="language" id="language-select" class="language_drop_down">
+              <option value="english" selected>English</option>
+              <option value="hindi">Hindi</option>
+            </select>
+          </div>
+        </div>
+        <div class="nav_item">
+          <button class="sign_in_button">Sign In</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero_bg_img_cont">
+        <img src="images/netflix_bg.jpg" alt="Netflix Banner Image" class="hero_bg_img" />
+      </div>
+      <div class="hero_bg_overlay"></div>
+      <div class="hero_card">
+        <h1 class="hero_title">
+          The biggest Indian hits. Ready to watch here <br> from ₹ 149.
+        </h1>
+        <h2 class="hero_subtitle">Join today. Cancel anytime.</h2>
+        <p class="hero_desc">
+          <nobr>Ready to watch? Enter your email to create or restart your membership.</nobr>
+          <br><br>
+          <!-- Updated IDs for email input and button -->
+          <nobr><input type="email" id="email-input" placeholder="Email Address" class="email">&nbsp;&nbsp;<button
+              id="sign-up-button" class="get_started">Get
+              Started ></button></nobr>
+        </p>
+      </div>
+    </section>
+    <section class="style_cards">
+      <!-- Added video-card class for hover functionality -->
+      <div class="card-1 video-card">
+        <div class="desc-1">
+          <h1>Enjoy on your TV.</h1>
+          <h3>Watch on smart TVs, PlayStation, Xbox,<br> Chromecast, Apple TV, Blu-ray players and<br> more.</h3>
+        </div>
+        <img src="images/tv.png" alt="Streaming on TV">
+        <video autoplay playsinline muted loop>
+          <source src="images/1.m4v" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="card-2">
+        <img src="images/mobile.jpg" alt="Netflix Mobile">
+        <div class="desc-2">
+          <h1>Download your shows<br> to watch offline</h1>
+          <h3>Save your favourites easily and always have<br> something to watch.</h3>
+        </div>
+      </div>
+      <!-- Added video-card class for hover functionality -->
+      <div class="card-3 video-card">
+        <div class="desc-3">
+          <h1>Watch everywhere</h1>
+          <h3>Stream unlimited movies and TV shows on<br> your phone, tablet, laptop, and TV.</h3>
+        </div>
+        <img src="images/device-pile-in.png">
+        <video autoplay playsinline muted loop>
+          <source src="images/video-devices-in.m4v" type="video/mp4">
+        </video>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <p>Questions? Call 000-800-919-1694</p>
+    <div class="footer-cols">
+      <ul>
+        <li>FAQ</li>
+        <li>Investor Relations</li>
+        <li>Privacy</li>
+        <li>Speed Test</li>
+      </ul>
+      <ul>
+        <li>Help Center</li>
+        <li>Jobs</li>
+        <li>Cookie Preferences</li>
+        <li>Legal Notices</li>
+      </ul>
+      <ul>
+        <li>Account</li>
+        <li>Ways to Watch</li>
+        <li>Corporate Information</li>
+        <li>Only on Netflix</li>
+      </ul>
+      <ul>
+        <li>Media Centre</li>
+        <li>Terms of Use</li>
+        <li>Contact Use</li>
+        <li>Speed Test</li>
+      </ul>
+    </div>
+  </footer>
+  <!-- Added dark mode toggle button -->
+  <button id="dark-mode-toggle" class="dark_mode_button">
+    <i class="fa fa-moon"></i>
+  </button>
+  <script src="netflix.js"></script>
+</body>
+
+</html>
