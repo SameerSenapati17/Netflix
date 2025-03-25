@@ -31,8 +31,9 @@ A responsive Netflix clone built with HTML, CSS, and JavaScript. This project re
    ```bash
    git clone https://github.com/your-username/netflix-clone.git
 2. Navigate to the project directory:
+   ```bash
    cd netflix-clone
-3. Open  netflix.html in your browser to view the project.
+4. Open  netflix.html in your browser to view the project.
 
 Usage
 Dark Mode: Click the toggle button in the bottom-right corner to switch between light and dark themes.
